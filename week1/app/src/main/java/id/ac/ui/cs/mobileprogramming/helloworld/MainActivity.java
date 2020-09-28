@@ -1,8 +1,10 @@
-package com.example.helloworld;
+package id.ac.ui.cs.mobileprogramming.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import id.ac.ui.cs.mobileprogramming.helloworld.R;
 
 public class MainActivity extends AppCompatActivity {
 
