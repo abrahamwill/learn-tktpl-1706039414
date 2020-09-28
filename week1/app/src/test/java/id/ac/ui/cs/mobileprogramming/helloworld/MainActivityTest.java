@@ -11,7 +11,7 @@ public class MainActivityTest {
     private MainActivity mActivity;
 
     @Test
-    public void testButtonShowDialogWithText() {
+    public void testMultFunction() {
         mActivity = new MainActivity();
         int valcheck = mActivity.mult(3,5);
         assertEquals(valcheck, 15);
