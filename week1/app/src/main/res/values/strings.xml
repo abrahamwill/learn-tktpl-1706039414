@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Hello World</string>
+    <string name="sampleDialog">This is a Sample Dialog</string>
+    <string name="clickMe">Click Me</string>
+    <string name="cancel">Cancel</string>
 </resources>
