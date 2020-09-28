@@ -30,4 +30,8 @@ public class MainActivity extends AppCompatActivity {
         SampleDialog sampleDialog = new SampleDialog();
         sampleDialog.show(getSupportFragmentManager(), "sample dialog");
     }
+
+    public int mult(int a,int b){
+        return a*b;
+    }
 }
