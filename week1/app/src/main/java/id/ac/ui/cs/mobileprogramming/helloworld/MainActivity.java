@@ -170,8 +170,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Request request = new Request.Builder()
                 .url(url)
                 .post(body)
-                .header("Accept", "application/json")
-                .header("Content-Type", "application/json")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
@@ -184,8 +182,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-
                 String mMessage = response.body().string();
+                Log.w("success Response", mMessage);
             }
         });
     }
