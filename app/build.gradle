@@ -37,8 +37,8 @@ android {
             jniLibs.srcDirs = ['libs'] // where libs is the name of the directory!
         }
     }
-//
-//    ndkVersion '21.3.6528147'
+
+    ndkVersion '21.0.6113669'
 }
 
 dependencies {
