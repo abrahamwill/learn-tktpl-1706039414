@@ -19,6 +19,10 @@ std::string ConvertJString(JNIEnv* env, jstring str)
 extern "C"
 JNIEXPORT jstring JNICALL Java_id_ac_ui_cs_mobileprogramming_helloworld_MainActivity_simplefun(JNIEnv* env, jobject, jstring text){
     std::string hello = ConvertJString( env, text );
-    return env->NewStringUTF(hello.c_str());
+    size_t n = std::count(hello.begin(), hello.end(), ' ');
+    n+=1;
+    char buf[99];
+    sprintf(buf, "%d", n);
+    return env->NewStringUTF(buf);
 }
 
